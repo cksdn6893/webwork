@@ -1,12 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <link href="../assets/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="site-header">
+      <h1 class="site-title">Turtle Ipsum</h1>
+      <p class="site-subtitle">The World's Premier Turtle Fan Club</p>
+    </header>
 
-<!doctype html>
-<html>
-    <head>
-        <title>example 1-2</title>
-    </head>
-    <body>
-        <H2>example 1-2</H2>
-        <HR>
-        example 1-2
-    </body>
+    <!-- Navigation Section -->
+    <nav class="main-nav" aria-label="Main Navigation">
+      <h2 class="nav-header">Resources</h2>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="https://www.youtube.com/watch?v=CMNry4PE93Y" aria-label="Watch I like turtles video">"I like turtles" Video</a></li>
+        <li class="nav-item"><a href="https://en.wikipedia.org/wiki/Turtle" aria-label="Turtle information on Wikipedia">Basic Turtle Info</a></li>
+        <li class="nav-item"><a href="https://en.wikipedia.org/wiki/Turtles_(chocolate)" aria-label="Learn about chocolate turtles">Chocolate Turtles</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+      <section>
+        <h2 class="page-title">Welcome to Turtle Ipsum.</h2>
+        <p><a href="#" aria-label="Learn more about Turtle Ipsum">Click here</a> to learn more.</p>
+        <p class="article-text">
+          Turtle ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <!-- Image with alt attribute -->
+        <img src="../assets/turtle.jpg" alt="A beautiful turtle swimming underwater">
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <section class="footer-section">
+        <button class="button" aria-label="Sign up for turtle news">Sign up for turtle news</button>
+      </section>
+      <section class="footer-section">
+        <h2 class="nav-header footer-title">Internal Pages</h2>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="../" aria-label="Go to the index page">Index</a></li>
+          <li class="nav-item"><a href="../semantic" aria-label="View a semantic example page">Semantic Example</a></li>
+        </ul>
+      </section>
+      <p class="footer-copyright">&copy; 2016 Instrument</p>
+    </footer>
+  </body>
 </html>

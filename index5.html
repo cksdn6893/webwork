@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Self-Introduction</title>
+</head>
+<body>
+    <div id="messageContainer"></div>
+    <script>
+        const messageContainer = document.getElementById('messageContainer');
+
+        // 자기소개 메시지 함수들
+        function introduction1() {
+            messageContainer.innerHTML = `안녕하세요! 제 이름은 김찬우입니다.`;
+        }
+
+        function introduction2() {
+            messageContainer.innerHTML = `저는 소프트웨어 개발에 열정을 가지고 있습니다.`;
+        }
+
+        function introduction3() {
+            messageContainer.innerHTML = `여가 시간에는 독서를 좋아합니다.`;
+        }
+
+        function introduction4() {
+            messageContainer.innerHTML = `새로운 기술을 배우는 것을 즐깁니다.`;
+        }
+
+        const introductions = [introduction1, introduction2, introduction3, introduction4];
+        let index = 0;
+
+        // 3초마다 다른 자기소개 메시지 업데이트
+        setInterval(() => {
+            introductions[index]();
+            index = (index + 1) % introductions.length; // 인덱스를 순환
+        }, 1000);
+
+        
+    </script>
+</body>
+</html>

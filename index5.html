@@ -6,6 +6,7 @@
 <body>
     <div id="messageContainer"></div>
     <script>
+        
         const messageContainer = document.getElementById('messageContainer');
 
         // 자기소개 메시지 함수들
@@ -31,7 +32,7 @@
         // 3초마다 다른 자기소개 메시지 업데이트
         setInterval(() => {
             introductions[index]();
-            index = (index + 1) % introductions.length; // 인덱스를 순환
+            index = (index + 1); // 인덱스를 순환
         }, 1000);
 
         

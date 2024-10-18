@@ -31,15 +31,15 @@ function dragElement(terrariumElement) {
         pos4 = e.clientY;
         document.onpointermove = elementDrag;
         document.onpointerup = stopElementDrag;
-        document.onpointerdown = click;    
+        document.ondblclick = click;    
         
         }
 
         function click(){
-            terrariumElement.ondblclick = function() {          
+        
                 terrariumElement.style.zIndex = x;
                 x= x+1;
-            };  
+         
         }
 
         

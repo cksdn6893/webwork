@@ -1,134 +1,82 @@
 h1 {
     color: blue;
     text-align: center;
-   }
-
-
-   body {
-    font-family: helvetica, arial, sans-serif;
-   }
-
-   #left-container {
-    left: 0px;
-    }
-    #right-container {
-    right: 0px;
-    }
-    .container {
-    background-color: #eee;
-    width: 15%;
-    top: 0px;
-    position: absolute;
-    height: 100%;
-    padding: 10px;
     }
 
-    .plant-holder {
-        position: relative; 
-        height: 15%; 
-        left: 0px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-
-       }
-
-
-       .plant {
-        max-width: 100%;
-        max-height: 100%; /* 높이는 자동 조정 */
-        z-index: 2;
-    }
-    
-    /* 반응형 디자인을 위한 미디어 쿼리 */
-    @media (max-width: 768px) {
-        .plant-holder {
-            height: 80px; /* 식물 홀더의 높이 조정 */
-            
+    body {
+        font-family: helvetica, arial, sans-serif;
         }
-        .plant {
-            max-width: 80%; /* 화면 크기에 따라 너비 조정 */
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .plant-holder {
-            height: 70px; /* 식물 홀더의 높이 조정 */
-            
-        }
-        .plant {
-            max-width: 70%; /* 화면 크기에 따라 너비 조정 */
-        }
-    }
 
-       .jar-walls {
-        height: 80%;
-        width: 60%;
-        background: #d1e1df;
-        border-radius: 1rem;
-        position: absolute;
-        bottom: 0.5%;
-        left: 20%;
-        opacity: 0.5;
-        z-index: 1;
-       }
-       .jar-top {
-        width: 50%;
-        height: 5%;
-        background: #d1e1df;
-        position: absolute;
-        bottom: 80.5%;
-        left: 25%;
-        opacity: 0.7;
-        z-index: 1;
-       }
+        #left-container {
+            left: 0px;
+            }
+            #right-container {
+            right: 0px;
+            }
+            .container {
+            background-color: #eee;
+            width: 15%;
+            top: 0px;
+            position: absolute;
+            height: 100%;
+            padding: 10px;
+            }
 
-       .jar-bottom {
-        width: 50%;
-        height: 1%;
-        background: #d1e1df;
-        position: absolute;
-        bottom: 0%;
-        left: 25%;
-        opacity: 0.7;
-       }
-       
-       .dirt {
-        width: 60%;
-        height: 5%;
-        background: #3a241d;
-        position: absolute;
-        border-radius: 0 0 1rem 1rem;
-        bottom: 1%;
-        left: 20%;
-        opacity: 0.7;
-        z-index: -1;
-       }
+            .plant-holder {
+                position: relative;
+                height: 13%;
+                left: -10px;
+                }
+                .plant {
+                position: absolute;
+                max-width: 150%;
+                max-height: 150%;
+                z-index: 2;
+                }
 
-       .jar-glossy-long{
-        width: 6%;
-        height: 17%;
-        background: #90d5df;
-        position: absolute;
-        border-radius: 0 0 1rem 1rem;
-        bottom: 21%;
-        left: 5%;
-        opacity: 0.7;
-        z-index: -1;
+                .jar-walls {
+                    height: 80%;
+                    width: 60%;
+                    background: #d1e1df;
+                    border-radius: 1rem;
+                    position: absolute;
+                    bottom: 0.5%;
+                    left: 20%;
+                    opacity: 0.5;
+                    z-index: 1;
+                    }
+                    .jar-top {
+                    width: 50%;
+                    height: 5%;
+                    background: #d1e1df;
+                    position: absolute;
+                    bottom: 80.5%;
+                    left: 25%;
+                    opacity: 0.7;
+                    z-index: 1;
+                    }
 
-       }
+                    .jar-bottom {
+                        width: 50%;
+                        height: 1%;
+                        background: #d1e1df;
+                        position: absolute;
+                        bottom: 0%;
+                        left: 25%;
+                        opacity: 0.7;
+                        }
+                        .dirt {
+                        width: 60%;
+                        height: 5%;
+                        background: #3a241d;
+                        position: absolute;
+                        border-radius: 0 0 1rem 1rem;
+                        bottom: 1%;
+                        left: 20%;
+                        opacity: 0.7;
+                        z-index: -1;
+                        }
 
-       .jar-glossy-short{
-        width: 6%;
-        height: 9%;
-        background: #90d5df;
-        position: absolute;
-        border-radius: 0 0 1rem 1rem;
-        bottom: 41%;
-        left: 5%;
-        opacity: 0.7;
-        z-index: -1;
-       }
 
-       
-       
+                  
+                       

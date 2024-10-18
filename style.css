@@ -38,6 +38,7 @@ body {
     max-width: 90%; /* 식물 이미지가 박스에 맞도록 비율 유지 */
     max-height: 90%; /* 높이 자동 조정 */
     object-fit: contain; /* 비율 유지하며 크기 조정 */
+    
 }
 
 

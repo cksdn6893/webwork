@@ -1,0 +1,150 @@
+body {
+    font-family: 'Arial';
+    text-align: center;
+    background-color: #00ffea;
+    padding: 50px;
+}
+
+h1 {
+    color: #333;
+    font-size: 100px ;
+}
+
+#quote {
+    font-size: 40px;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #000000;
+    display: inline-block;
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 600px;
+    
+}
+
+#typed-value {
+    width: 300px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #00ff2a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+
+
+
+.highlight {
+    background-color: yellow;
+    }
+    .error {
+    background-color: lightcoral;
+    border: red;
+    }
+
+.effect {
+    background-color: blue; /* 쓰는 글자가 맞으면 배경이 파란색으로 변경 */
+    color: white; /* 쓰는 글자가 맞으면 글자가 흰색으로 변경 */
+}
+
+
+/* 모달 애니메이션 */
+@keyframes fireworks {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* 모달 창 배경 파티클 애니메이션 */
+@keyframes sparkle {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px) scale(0);
+    }
+}
+
+/* 모달 창 스타일 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 모달 애니메이션 효과 추가 */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 8px;
+    animation: fireworks 1s ease-out forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 닫기 버튼 스타일 */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+/* 파티클 효과 */
+.sparkle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: gold;
+    width: 8px;
+    height: 8px;
+    animation: sparkle 0.8s linear infinite;
+}
+
+/* 모달이 나타날 때 파티클 생성 */
+@keyframes modal-entrance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
